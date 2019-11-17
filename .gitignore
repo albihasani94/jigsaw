@@ -3,3 +3,4 @@ mods
 mlib
 .idea
 *.iml
+.DS_Store
