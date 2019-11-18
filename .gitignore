@@ -1,6 +1,7 @@
 .vscode
 mods
-mlib
 .idea
 *.iml
 .DS_Store
+out
+custom_jre
