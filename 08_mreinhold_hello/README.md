@@ -77,3 +77,19 @@ Run it without needing to specify the main class
 ```
 java --module-path lib -m org.openjdk.hello
 ```
+
+## And theeen
+
+Separate the modules.
+
+Multi-module compilation
+
+```
+javac --module-source-path src  -d lib  --module-path lib $(find src -name "*.java")
+```
+
+Run the main module
+
+```
+java --module-path lib -m org.openjdk.hello/org.openjdk.hello.Main
+```
