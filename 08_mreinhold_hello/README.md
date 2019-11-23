@@ -63,3 +63,17 @@ java --module-path lib -m org.openjdk.hello/org.openjdk.hello.Main
 ```
 
 You can still run it on the classpath tho, using -classpath.
+
+## And then
+
+Insert info about the main class in the jar
+
+```
+jar -c -f lib/hello.jar --main-class org.openjdk.hello.Main -C classes .
+```
+
+Run it without needing to specify the main class
+
+```
+java --module-path lib -m org.openjdk.hello
+```
